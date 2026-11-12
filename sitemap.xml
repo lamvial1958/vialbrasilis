@@ -25,6 +25,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/"/>
   </url>
   <url>
+    <loc>https://vialbrasilis.it/brasile/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/brasile/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/brasil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/brasile/"/>
+  </url>
+  <url>
+    <loc>https://vialbrasilis.it/pt/brasil/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/brasile/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/brasil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/brasile/"/>
+  </url>
+  <url>
     <loc>https://vialbrasilis.it/privacy/</loc>
     <lastmod>2026-11-12</lastmod>
   </url>

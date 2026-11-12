@@ -89,12 +89,26 @@ def head(lang):
     ) % (t, d, url, alt, t, d, url, OGLOCALE[lang], og, BASE)
 
 
-def switch(lang):
+NAVBRASIL = {
+    'it': '<a href="/brasile/">Brasile</a>',
+    'pt': '<a href="/pt/brasil/">Brasil</a>',
+}
+BRASIL_PATH = {'it': '/brasile/', 'pt': '/pt/brasil/'}
+BRASIL_META = {
+    'it': ('Italia e Brasile — Supporto linguistico e commerciale | VIAL Brasilis',
+           "Supporto linguistico e commerciale per le aziende italiane che esportano in Brasile e per le imprese brasiliane che importano dall'Italia: traduzione, interpretariato e affiancamento nelle trattative."),
+    'pt': ('Itália e Brasil — Apoio linguístico e comercial | VIAL Brasilis',
+           'Apoio linguístico e comercial a empresas italianas que exportam para o Brasil e a empresas brasileiras que importam da Itália: tradução, interpretação e acompanhamento de negociações.'),
+}
+
+
+def switch(lang, paths=None):
+    paths = paths or PATH
     out = []
     for l in LANGS:
         cls = 'lang-btn active' if l == lang else 'lang-btn'
         cur = ' aria-current="true"' if l == lang else ''
-        out.append('<a class="%s" href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (cls, PATH[l], HTMLLANG[l], HTMLLANG[l], cur, l.upper()))
+        out.append('<a class="%s" href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (cls, paths[l], HTMLLANG[l], HTMLLANG[l], cur, l.upper()))
     return ''.join(out)
 
 
@@ -176,9 +190,58 @@ def build_home(lang, tpl):
             .replace('{{SKIP}}', u['skip']).replace('{{LANGSWITCH}}', switch(lang))
             .replace('{{CONSENT}}', u['consent']).replace('{{OKTITLE}}', u['oktitle'])
             .replace('{{OKTEXT}}', u['oktext']).replace('{{FOOTER}}', footer(lang))
-            .replace('{{SCRIPT}}', script(lang)))
+            .replace('{{SCRIPT}}', script(lang))
+            .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, '')))
     assert '{{' not in html, re.findall(r'\{\{\w+\}\}', html)
     return html
+
+
+BRASIL_TPL = '''<!DOCTYPE html>
+<html lang="%(hl)s">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>%(t)s</title>
+<meta name="description" content="%(d)s">
+<link rel="canonical" href="%(url)s">
+%(alt)s<meta property="og:type" content="website">
+<meta property="og:site_name" content="VIAL Brasilis">
+<meta property="og:title" content="%(t)s">
+<meta property="og:description" content="%(d)s">
+<meta property="og:url" content="%(url)s">
+<meta property="og:locale" content="%(og)s">
+<meta property="og:image" content="%(base)s/img/logo.png">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="legal">
+<a class="skip-link" href="#main">%(skip)s</a>
+<nav>
+  <a class="nav-brand" href="%(home)s"><img class="nav-logo" src="/img/logo.png" alt="VIAL Brasilis"><span class="nav-name">VIAL Brasilis</span></a>
+  <div class="nav-links">
+    <a href="%(home)s">&larr; Home</a>
+    <div class="lang-switcher" role="group" aria-label="Lingua / Language / Idioma">%(sw)s</div>
+  </div>
+</nav>
+<main id="main" class="legal-main"><div class="container legal-container">
+%(body)s
+</div></main>
+%(footer)s
+</body>
+</html>
+'''
+
+
+def brasil_page(lang):
+    t, d = BRASIL_META[lang]
+    url = BASE + BRASIL_PATH[lang]
+    body = open(os.path.join(ROOT, 'src', 'brasil.%s.body.html' % lang), encoding='utf-8').read()
+    alt = ''.join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (HTMLLANG[l], BASE, BRASIL_PATH[l]) for l in BRASIL_PATH)
+    alt += '<link rel="alternate" hreflang="x-default" href="%s%s">\n' % (BASE, BRASIL_PATH['it'])
+    sw_paths = {'it': BRASIL_PATH['it'], 'en': PATH['en'], 'pt': BRASIL_PATH['pt']}
+    return BRASIL_TPL % dict(hl=HTMLLANG[lang], t=t, d=d, url=url, alt=alt, og=OGLOCALE[lang], base=BASE,
+                             skip=UI[lang]['skip'], home=PATH[lang], sw=switch(lang, sw_paths), body=body,
+                             footer=footer(lang))
 
 
 def write(rel, content):
@@ -224,6 +287,8 @@ def main():
     tpl = open(os.path.join(ROOT, 'src', 'template.html'), encoding='utf-8').read()
     for lang in LANGS:
         write(PATH[lang] + 'index.html', build_home(lang, tpl))
+    for lang in BRASIL_PATH:
+        write(BRASIL_PATH[lang] + 'index.html', brasil_page(lang))
     for page, (title, desc) in LEGAL.items():
         src = open(os.path.join(ROOT, 'src', page + '.body.html'), encoding='utf-8').read()
         write('/%s/index.html' % page, legal_page(title, desc, '/%s/' % page, src))
@@ -232,6 +297,10 @@ def main():
     urls = ''
     for l in LANGS:
         urls += '  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n%s  </url>\n' % (BASE, PATH[l], LASTMOD, alts)
+    balts = ''.join('    <xhtml:link rel="alternate" hreflang="%s" href="%s%s"/>\n' % (HTMLLANG[l], BASE, BRASIL_PATH[l]) for l in BRASIL_PATH)
+    balts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>\n' % (BASE, BRASIL_PATH['it'])
+    for l in BRASIL_PATH:
+        urls += '  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n%s  </url>\n' % (BASE, BRASIL_PATH[l], LASTMOD, balts)
     for p in LEGAL:
         urls += '  <url>\n    <loc>%s/%s/</loc>\n    <lastmod>%s</lastmod>\n  </url>\n' % (BASE, p, LASTMOD)
     write('/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls + '</urlset>\n')
