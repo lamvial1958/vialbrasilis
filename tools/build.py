@@ -103,7 +103,7 @@ def footer(lang):
     return '''<footer>
   <div class="container">
     <div class="footer-inner">
-      <div>&copy; 2026 <strong>VIAL Brasilis</strong> &middot; Luiz Antonio M. Vial &middot; %s <span class="todo">[PREENCHER: n. P.IVA]</span> &middot; <span class="todo">[PREENCHER: indirizzo sede]</span>, Arsiero (VI), Italia</div>
+      <div>&copy; 2026 <strong>VIAL Brasilis</strong> &middot; Luiz Antonio M. Vial &middot; %s &middot; Arsiero (VI), Italia</div>
       <div class="footer-links">
         <a href="mailto:vial@vialbrasilis.it">vial@vialbrasilis.it</a>
         <a href="tel:+393274341567">+39 327 4341567</a>
