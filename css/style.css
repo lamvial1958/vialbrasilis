@@ -173,3 +173,5 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .legal-container ul{margin:0.5rem 0 0.5rem 1.25rem}
 .legal-container a{color:var(--red)}
 .legal-container .updated{color:var(--grey-text);font-size:0.8rem}
+.legal-container a.btn-primary{color:var(--white);text-decoration:none;display:inline-block}
+.legal-container a.btn-primary:hover{color:var(--white)}
