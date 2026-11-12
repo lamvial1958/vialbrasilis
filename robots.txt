@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vialbrasilis.it/sitemap.xml
