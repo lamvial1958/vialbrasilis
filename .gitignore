@@ -1,0 +1,6 @@
+# Material interno, nao publicar no site
+docs/apresentacao-empresas/
+docs/Apresenta*
+docs/Roteiro_CCIRS*
+docs/VIAL_Brasilis_Resumo_de_servicos.*
+__pycache__/
