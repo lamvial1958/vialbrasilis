@@ -28,7 +28,7 @@ I18N = {
     'nav_contact': {'it': 'Contatti', 'en': 'Contact', 'pt': 'Contatos'},
     'cta_quote': {'it': 'Richiedi un preventivo', 'en': 'Request a quote', 'pt': 'Solicitar orçamento'},
     'cta_services': {'it': 'Scopri i servizi', 'en': 'Our services', 'pt': 'Nossos serviços'},
-    'stat_years': {'it': 'ANNI DI LEADERSHIP', 'en': 'YEARS OF LEADERSHIP', 'pt': 'ANOS DE LIDERANÇA'},
+    'stat_years': {'it': 'ANNI DI ESPERIENZA', 'en': 'YEARS OF EXPERIENCE', 'pt': 'ANOS DE EXPERIÊNCIA'},
     'stat_langs': {'it': 'LINGUE OPERATIVE', 'en': 'OPERATIVE LANGUAGES', 'pt': 'LÍNGUAS OPERACIONAIS'},
     'stat_pairs': {'it': 'COPPIE LINGUISTICHE', 'en': 'LANGUAGE PAIRS', 'pt': 'PARES LINGUÍSTICOS'},
     'services_eyebrow': {'it': 'I nostri servizi', 'en': 'Our services', 'pt': 'Nossos serviços'},
@@ -122,7 +122,7 @@ def footer(lang):
         <a href="mailto:vial@vialbrasilis.it">vial@vialbrasilis.it</a>
         <a href="tel:+393274341567">+39 327 4341567</a>
         <a href="mailto:machado.vial@pec.it" class="footer-pec">PEC: machado.vial@pec.it</a>
-        <a href="https://linkedin.com/in/luizantonio-vial" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/luiz-antonio-machado-vial-876a73278/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="/privacy/">%s</a>
         <a href="/cookie/">%s</a>
       </div>
