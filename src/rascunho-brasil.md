@@ -16,11 +16,11 @@ URLs sugeridas: `/it/brasile/` não existe na estrutura atual; proposta: `/brasi
 ### Para empresas italianas que exportam para o Brasil
 **H2:** Entrar e crescer no mercado brasileiro, com alguém que conhece os dois lados
 
-O mercado brasileiro se negocia em português, com ritmo e hábitos comerciais próprios. Apoio a empresas italianas, em especial no Rio Grande do Sul, na preparação e no acompanhamento de suas relações comerciais:
+O mercado brasileiro se negocia em português, com ritmo e hábitos comerciais próprios. Apoio a empresas italianas, em qualquer região do Brasil, na preparação e no acompanhamento de suas relações comerciais:
 
 - **Tradução** de catálogos, fichas técnicas, contratos, propostas e correspondência (IT ⇄ PT ⇄ EN).
-- **Interpretação** em reuniões, feiras e negociações, presencial ou em missões comerciais.
-- **Apoio comercial** à exportação e à entrada no mercado gaúcho: contatos, preparação e acompanhamento de negociações, revisão de documentos. A partir de € 500, sob consulta.
+- **Interpretação** em reuniões, feiras e negociações, presencial, online ou em missões comerciais, na Itália ou no Brasil.
+- **Apoio comercial** à exportação e à entrada no mercado brasileiro: contatos, preparação e acompanhamento de negociações, revisão de documentos. A partir de € 500, sob consulta.
 - **Formação linguística** para equipes de exportação: português comercial, online ou presencial.
 
 ### Para empresas brasileiras que importam da Itália
@@ -34,13 +34,13 @@ Para negociar com fornecedores italianos, o entendimento exato de especificaçõ
 - **Atendimento em português**, com conhecimento do contexto empresarial italiano.
 
 ### Como trabalho
-- Base na Itália (Arsiero, Vicenza), com disponibilidade para viajar e acompanhar missões comerciais.
+- Base na Itália (Arsiero, Vicenza), com atendimento a qualquer ponto do Brasil e da Itália. Viajo para acompanhar missões comerciais e negociações; as despesas de viagem ficam por conta do cliente.
 - Atendimento em português, italiano e inglês.
 - Resposta a pedidos de orçamento em até 24 horas úteis.
 - Valores sem IVA; ver a seção de tarifas.
 
 ### Quem atende
-Luiz Antonio Machado Vial: engenheiro químico (PUCRS), mestre em Engenharia de Produção e Sistemas (UNISINOS), natural do Rio Grande do Sul e cidadão ítalo-brasileiro. Diretor Comercial da iBus Group desde 2011, em negociações internacionais em português, espanhol e inglês.
+Luiz Antonio Machado Vial: engenheiro químico (PUCRS), mestre em Engenharia de Produção e Sistemas (UNISINOS), nascido no Brasil e cidadão ítalo-brasileiro. Diretor Comercial da iBus Group desde 2011, em negociações internacionais em português, espanhol e inglês.
 
 ### Chamada para contato
 **CTA:** Conte-me o seu projeto — resposta em até 24 horas úteis.
@@ -57,11 +57,11 @@ Botão: **Solicitar orçamento** (leva ao formulário) · vial@vialbrasilis.it �
 ### Per le aziende italiane che esportano in Brasile
 **H2:** Entrare e crescere nel mercato brasiliano, con chi conosce entrambi i lati
 
-Il mercato brasiliano si negozia in portoghese, con tempi e abitudini commerciali propri. Affianco le aziende italiane, in particolare nel Rio Grande do Sul, nella preparazione e nella gestione dei rapporti commerciali:
+Il mercato brasiliano si negozia in portoghese, con tempi e abitudini commerciali propri. Affianco le aziende italiane, in qualsiasi regione del Brasile, nella preparazione e nella gestione dei rapporti commerciali:
 
 - **Traduzione** di cataloghi, schede tecniche, contratti, offerte e corrispondenza (IT ⇄ PT ⇄ EN).
-- **Interpretariato** in riunioni, fiere e trattative, in presenza o in missione commerciale.
-- **Supporto commerciale** all'export e all'ingresso nel mercato del Rio Grande do Sul: contatti, preparazione e affiancamento nelle trattative, revisione di documenti. A partire da € 500, su preventivo.
+- **Interpretariato** in riunioni, fiere e trattative, in presenza, online o in missione commerciale, in Italia o in Brasile.
+- **Supporto commerciale** all'export e all'ingresso nel mercato brasiliano: contatti, preparazione e affiancamento nelle trattative, revisione di documenti. A partire da € 500, su preventivo.
 - **Formazione linguistica** per team export: portoghese commerciale, online o in presenza.
 
 ### Per le imprese brasiliane che importano dall'Italia
@@ -72,13 +72,13 @@ Il mercato brasiliano si negozia in portoghese, con tempi e abitudini commercial
 Per trattare con fornitori italiani, la comprensione esatta di specifiche, condizioni e tempi fa la differenza. Affianco gli importatori brasiliani con traduzioni dall'italiano al portoghese, interpretariato in riunioni, videoconferenze e visite a fornitori e fiere in Italia, e revisione di documenti commerciali.
 
 ### Come lavoro
-- Sede in Italia (Arsiero, Vicenza), con disponibilità a viaggiare e ad accompagnare missioni commerciali.
+- Sede in Italia (Arsiero, Vicenza), con assistenza in qualsiasi punto del Brasile e dell'Italia. Viaggio per accompagnare missioni commerciali e trattative; le spese di viaggio sono a carico del cliente.
 - Servizio in portoghese, italiano e inglese.
 - Risposta alle richieste di preventivo entro 24 ore lavorative.
 - Prezzi IVA esclusa; vedi la sezione tariffe.
 
 ### Chi siamo
-Luiz Antonio Machado Vial: ingegnere chimico (PUCRS), Master in Ingegneria della Produzione e dei Sistemi (UNISINOS), nato in Rio Grande do Sul, cittadino italo-brasiliano. Direttore Commerciale di iBus Group dal 2011, con trattative internazionali condotte in portoghese, spagnolo e inglese.
+Luiz Antonio Machado Vial: ingegnere chimico (PUCRS), Master in Ingegneria della Produzione e dei Sistemi (UNISINOS), nato in Brasile, cittadino italo-brasiliano. Direttore Commerciale di iBus Group dal 2011, con trattative internazionali condotte in portoghese, spagnolo e inglese.
 
 ### Invito al contatto
 **CTA:** Raccontatemi il vostro progetto — risposta entro 24 ore lavorative.
@@ -87,7 +87,6 @@ Pulsante: **Richiedi un preventivo** · vial@vialbrasilis.it · +39 327 4341567
 ---
 
 ## Pontos para sua decisão
-1. "Rio Grande do Sul": o resumo diz "natural de Passo Fundo (RS)"; aqui usei "natural do Rio Grande do Sul". Posso citar Passo Fundo se preferir.
-2. A parte do importador brasileiro está em PT-BR completa e curta em IT. Confirmar a ênfase.
-3. O resumo menciona "cerca de 50 clientes no RS" e uma cervejaria artesanal (BMT). Não usei, por você ter pedido para seguir o LinkedIn. Diga se quer incluir.
-4. Onde ligar a página: item no menu, ou só um botão na home. Não implementei nada disso.
+1. A parte do importador brasileiro está completa em PT-BR e curta em IT. Confirmar a ênfase.
+2. Não usei "cerca de 50 clientes" nem a cervejaria BMT (você pediu para seguir o LinkedIn).
+3. Onde ligar a página: item no menu, ou só um botão na home. Nada foi implementado.
