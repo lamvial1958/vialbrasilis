@@ -7,24 +7,38 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://vialbrasilis.it'
-LASTMOD = '2026-11-12'
+LASTMOD = '2026-11-18'
 LANGS = ['it', 'en', 'pt']
 PATH = {'it': '/', 'en': '/en/', 'pt': '/pt/'}
 HTMLLANG = {'it': 'it', 'en': 'en', 'pt': 'pt-BR'}
 OGLOCALE = {'it': 'it_IT', 'en': 'en_GB', 'pt': 'pt_BR'}
 
 META = {
-    'it': ('VIAL Brasilis — Traduzione, Interpretariato e Formazione Linguistica PT·IT·EN',
-           'Servizi linguistici B2B trilingui PT↔IT↔EN per aziende italiane che operano nei mercati lusofoni e anglofoni: traduzione, interpretariato fieristico e formazione linguistica aziendale.'),
-    'en': ('VIAL Brasilis — Translation, Interpretation and Language Training PT·IT·EN',
-           'Trilingual B2B language services PT↔IT↔EN for Italian companies operating in Lusophone and Anglophone markets: translation, trade fair interpretation and corporate language training.'),
-    'pt': ('VIAL Brasilis — Tradução, Interpretação e Formação Linguística PT·IT·EN',
-           'Serviços linguísticos B2B trilíngues PT↔IT↔EN para empresas italianas que atuam nos mercados lusófonos e anglófonos: tradução, interpretação em feiras e formação linguística empresarial.'),
+    'it': ('V&M — Diagnosi di cassa e margini per le aziende | VIAL Brasilis',
+           'Diagnosi rapida di cassa e margini per le aziende, letta per settore, con piano a 30, 60 e 90 giorni. Inoltre traduzione, interpretariato e formazione linguistica PT·IT·EN.'),
+    'en': ('V&M — Cash and margin diagnostics for companies | VIAL Brasilis',
+           'Fast cash and margin diagnostics for companies, read by sector, with a 30-60-90 day plan. Also translation, interpretation and language training PT·IT·EN.'),
+    'pt': ('V&M — Diagnóstico de caixa e margem para empresas | VIAL Brasilis',
+           'Diagnóstico rápido de caixa e margem para empresas, lido por setor, com plano de 30, 60 e 90 dias. Também tradução, interpretação e formação linguística PT·IT·EN.'),
+}
+TRAD_PATH = {'it': '/traduzione/', 'en': '/en/translation/', 'pt': '/pt/traducao/'}
+TRAD_META = {
+    'it': ('Traduzione, interpretariato e formazione linguistica | V&M · VIAL Brasilis',
+           'Servizi linguistici B2B trilingui PT↔IT↔EN per aziende che operano nei mercati lusofoni e anglofoni: traduzione, interpretariato fieristico e formazione linguistica aziendale.'),
+    'en': ('Translation, interpretation and language training | V&M · VIAL Brasilis',
+           'Trilingual B2B language services PT↔IT↔EN for companies operating in Lusophone and Anglophone markets: translation, trade fair interpretation and corporate language training.'),
+    'pt': ('Tradução, interpretação e formação linguística | V&M · VIAL Brasilis',
+           'Serviços linguísticos B2B trilíngues PT↔IT↔EN para empresas que atuam nos mercados lusófonos e anglófonos: tradução, interpretação em feiras e formação linguística empresarial.'),
 }
 I18N = {
+    'nav_how': {'it': 'Come funziona', 'en': 'How it works', 'pt': 'Como funciona'},
+    'nav_trans': {'it': 'Traduzione', 'en': 'Translation', 'pt': 'Tradução'},
+    'cta_trans': {'it': 'Traduzione e interpretariato', 'en': 'Translation and interpretation', 'pt': 'Tradução e interpretação'},
+    'stat_types': {'it': 'TIPI DI AZIENDA, SOGLIE PER SETTORE', 'en': 'COMPANY TYPES, SECTOR THRESHOLDS', 'pt': 'TIPOS DE EMPRESA, LIMITES POR SETOR'},
+    'stat_plan': {'it': 'GIORNI: IL PIANO D\'AZIONE', 'en': 'DAYS: THE ACTION PLAN', 'pt': 'DIAS: O PLANO DE AÇÃO'},
     'nav_services': {'it': 'Servizi', 'en': 'Services', 'pt': 'Serviços'},
     'nav_pricing': {'it': 'Tariffe', 'en': 'Pricing', 'pt': 'Tarifas'},
-    'nav_about': {'it': 'Chi siamo', 'en': 'About', 'pt': 'Sobre'},
+    'nav_about': {'it': 'Chi sono', 'en': 'About me', 'pt': 'Quem sou'},
     'nav_contact': {'it': 'Contatti', 'en': 'Contact', 'pt': 'Contatos'},
     'cta_quote': {'it': 'Richiedi un preventivo', 'en': 'Request a quote', 'pt': 'Solicitar orçamento'},
     'cta_services': {'it': 'Scopri i servizi', 'en': 'Our services', 'pt': 'Nossos serviços'},
@@ -36,11 +50,11 @@ I18N = {
     'contact_eyebrow': {'it': 'Contatti', 'en': 'Contact', 'pt': 'Contatos'},
 }
 SELECT = {
-    'it': ['Seleziona un servizio', 'Traduzione non giurata', 'Interpretariato fieristico', 'Corso di portoghese', 'Corso di inglese', 'Supporto export', 'Altro'],
-    'en': ['Select a service', 'Non-sworn Translation', 'Trade Fair Interpretation', 'Portuguese Course', 'English Course', 'Export Support', 'Other'],
-    'pt': ['Selecione um serviço', 'Tradução não juramentada', 'Interpretação em feiras', 'Curso de português', 'Curso de inglês', 'Suporte à exportação', 'Outro'],
+    'it': ['Seleziona un servizio', 'Traduzione non giurata', 'Interpretariato fieristico', 'Corso di portoghese', 'Corso di inglese', 'Supporto export', 'Diagnosi e consulenza', 'Altro'],
+    'en': ['Select a service', 'Non-sworn Translation', 'Trade Fair Interpretation', 'Portuguese Course', 'English Course', 'Export Support', 'Diagnostics and consulting', 'Other'],
+    'pt': ['Selecione um serviço', 'Tradução não juramentada', 'Interpretação em feiras', 'Curso de português', 'Curso de inglês', 'Suporte à exportação', 'Diagnóstico e consultoria', 'Outro'],
 }
-SELECT_VALS = ['', 'traduzione', 'interpretariato', 'corso_pt', 'corso_en', 'export', 'altro']
+SELECT_VALS = ['', 'traduzione', 'interpretariato', 'corso_pt', 'corso_en', 'export', 'diagnosi', 'altro']
 UI = {
     'it': dict(
         skip='Vai al contenuto',
@@ -72,19 +86,20 @@ UI = {
 }
 
 
-def head(lang):
-    t, d = META[lang]
-    url = BASE + PATH[lang]
-    alt = ''.join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (HTMLLANG[l], BASE, PATH[l]) for l in LANGS)
-    alt += '<link rel="alternate" hreflang="x-default" href="%s/">\n' % BASE
+def head(lang, meta=None, paths=None):
+    t, d = (meta or META)[lang]
+    paths = paths or PATH
+    url = BASE + paths[lang]
+    alt = ''.join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (HTMLLANG[l], BASE, paths[l]) for l in LANGS)
+    alt += '<link rel="alternate" hreflang="x-default" href="%s%s">\n' % (BASE, paths['it'])
     og = ''.join('<meta property="og:locale:alternate" content="%s">\n' % OGLOCALE[l] for l in LANGS if l != lang)
     return (
         '<title>%s</title>\n<meta name="description" content="%s">\n'
         '<link rel="canonical" href="%s">\n%s'
-        '<meta property="og:type" content="website">\n<meta property="og:site_name" content="VIAL Brasilis">\n'
+        '<meta property="og:type" content="website">\n<meta property="og:site_name" content="V&amp;M · VIAL Brasilis">\n'
         '<meta property="og:title" content="%s">\n<meta property="og:description" content="%s">\n'
         '<meta property="og:url" content="%s">\n<meta property="og:locale" content="%s">\n%s'
-        '<meta property="og:image" content="%s/img/logo.png">\n<meta name="twitter:card" content="summary">\n'
+        '<meta property="og:image" content="%s/img/vm-logo.png">\n<meta name="twitter:card" content="summary">\n'
         '<link rel="icon" type="image/png" href="/img/logo.png">'
     ) % (t, d, url, alt, t, d, url, OGLOCALE[lang], og, BASE)
 
@@ -94,6 +109,20 @@ NAVBRASIL = {
     'pt': '<a href="/pt/brasil/">Brasil</a>',
 }
 BRASIL_PATH = {'it': '/brasile/', 'pt': '/pt/brasil/'}
+DIAG_PATH = {'it': '/diagnosi/', 'en': '/en/diagnosis/', 'pt': '/pt/diagnostico/'}
+NAVDIAG = {
+    'it': '<a href="/diagnosi/">Diagnosi</a>',
+    'en': '<a href="/en/diagnosis/">Diagnostics</a>',
+    'pt': '<a href="/pt/diagnostico/">Diagnóstico</a>',
+}
+DIAG_META = {
+    'it': ('Diagnosi rapida di cassa e margini per le aziende | VIAL Brasilis',
+           'Diagnosi di cassa e margini per le aziende, letta per settore: dove si ferma il denaro, cosa fare per primo, con piano a 30, 60 e 90 giorni, riservatezza e compenso legato ai risultati.'),
+    'en': ('Fast cash and margin diagnostics for companies | VIAL Brasilis',
+           'Cash and margin diagnostics for companies, read by sector: where money gets stuck, what to do first, with a 30-60-90 day plan, confidentiality and a fee tied to results.'),
+    'pt': ('Diagnóstico rápido de caixa e margem para empresas | VIAL Brasilis',
+           'Diagnóstico de caixa e margem para empresas, lido por setor: onde o dinheiro trava, o que fazer primeiro, com plano de 30, 60 e 90 dias, confidencialidade e honorário ligado aos resultados.'),
+}
 BRASIL_META = {
     'it': ('Italia e Brasile — Supporto linguistico e commerciale | VIAL Brasilis',
            "Supporto linguistico e commerciale per le aziende italiane che esportano in Brasile e per le imprese brasiliane che importano dall'Italia: traduzione, interpretariato e affiancamento nelle trattative."),
@@ -117,7 +146,7 @@ def footer(lang):
     return '''<footer>
   <div class="container">
     <div class="footer-inner">
-      <div>&copy; 2026 <strong>VIAL Brasilis</strong> &middot; Luiz Antonio M. Vial &middot; %s &middot; Arsiero (VI), Italia</div>
+      <div>&copy; 2026 <strong>V&amp;M</strong> &middot; VIAL Brasilis &middot; Luiz Antonio M. Vial &middot; %s &middot; Arsiero (VI), Italia</div>
       <div class="footer-links">
         <a href="mailto:vial@vialbrasilis.it">vial@vialbrasilis.it</a>
         <a href="tel:+393274341567">+39 327 4341567</a>
@@ -164,8 +193,9 @@ def script(lang):
             .replace('__SUBJ__', u['subj']))
 
 
-def build_home(lang, tpl):
+def build_home(lang, tpl, meta=None, paths=None):
     u = UI[lang]
+    paths = paths or PATH
     soup = BeautifulSoup(tpl, 'html.parser')
     for el in soup.select('[data-lang]'):
         langs = el['data-lang'].replace('active', '').split()
@@ -177,7 +207,7 @@ def build_home(lang, tpl):
         el.string = I18N[el['data-i18n']][lang]
         del el['data-i18n']
     sel = soup.find('select', id='servizio')
-    for val, txt in zip(SELECT_VALS, SELECT[lang]):
+    for val, txt in (zip(SELECT_VALS, SELECT[lang]) if sel is not None else []):
         o = soup.new_tag('option', value=val)
         o.string = txt
         sel.append(o)
@@ -186,11 +216,13 @@ def build_home(lang, tpl):
         if nxt is not None and nxt.get('id'):
             lab['for'] = nxt['id']
     html = str(soup)
-    html = (html.replace('{{HTMLLANG}}', HTMLLANG[lang]).replace('{{HEAD}}', head(lang))
-            .replace('{{SKIP}}', u['skip']).replace('{{LANGSWITCH}}', switch(lang))
+    html = (html.replace('{{HTMLLANG}}', HTMLLANG[lang]).replace('{{HEAD}}', head(lang, meta, paths))
+            .replace('{{SKIP}}', u['skip']).replace('{{LANGSWITCH}}', switch(lang, paths))
             .replace('{{CONSENT}}', u['consent']).replace('{{OKTITLE}}', u['oktitle'])
             .replace('{{OKTEXT}}', u['oktext']).replace('{{FOOTER}}', footer(lang))
-            .replace('{{SCRIPT}}', script(lang))
+            .replace('{{SCRIPT}}', script(lang) if '{{SCRIPT}}' in html else '')
+            .replace('{{HOME}}', PATH[lang]).replace('{{TRADHREF}}', TRAD_PATH[lang])
+            .replace('{{DIAGHREF}}', DIAG_PATH[lang]).replace('{{BRASILHREF}}', BRASIL_PATH.get(lang, PATH[lang]))
             .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, '')))
     assert '{{' not in html, re.findall(r'\{\{\w+\}\}', html)
     return html
@@ -205,19 +237,19 @@ BRASIL_TPL = '''<!DOCTYPE html>
 <meta name="description" content="%(d)s">
 <link rel="canonical" href="%(url)s">
 %(alt)s<meta property="og:type" content="website">
-<meta property="og:site_name" content="VIAL Brasilis">
+<meta property="og:site_name" content="V&amp;M · VIAL Brasilis">
 <meta property="og:title" content="%(t)s">
 <meta property="og:description" content="%(d)s">
 <meta property="og:url" content="%(url)s">
 <meta property="og:locale" content="%(og)s">
-<meta property="og:image" content="%(base)s/img/logo.png">
+<meta property="og:image" content="%(base)s/img/vm-logo.png">
 <link rel="icon" type="image/png" href="/img/logo.png">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="legal">
 <a class="skip-link" href="#main">%(skip)s</a>
 <nav>
-  <a class="nav-brand" href="%(home)s"><img class="nav-logo" src="/img/logo.png" alt="VIAL Brasilis"><span class="nav-name">VIAL Brasilis</span></a>
+  <a class="nav-brand" href="%(home)s"><img class="nav-logo" src="/img/vm-logo.png" alt="V&amp;M"><span class="nav-name">V&amp;M<small>VIAL Brasilis</small></span></a>
   <div class="nav-links">
     <a href="%(home)s">&larr; Home</a>
     <div class="lang-switcher" role="group" aria-label="Lingua / Language / Idioma">%(sw)s</div>
@@ -244,6 +276,17 @@ def brasil_page(lang):
                              footer=footer(lang))
 
 
+def diag_page(lang):
+    t, d = DIAG_META[lang]
+    url = BASE + DIAG_PATH[lang]
+    body = open(os.path.join(ROOT, 'src', 'diagnosi.%s.body.html' % lang), encoding='utf-8').read()
+    alt = ''.join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (HTMLLANG[l], BASE, DIAG_PATH[l]) for l in LANGS)
+    alt += '<link rel="alternate" hreflang="x-default" href="%s%s">\n' % (BASE, DIAG_PATH['it'])
+    return BRASIL_TPL % dict(hl=HTMLLANG[lang], t=t, d=d, url=url, alt=alt, og=OGLOCALE[lang], base=BASE,
+                             skip=UI[lang]['skip'], home=PATH[lang], sw=switch(lang, DIAG_PATH), body=body,
+                             footer=footer(lang))
+
+
 def write(rel, content):
     path = os.path.join(ROOT, rel.lstrip('/'))
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -265,7 +308,7 @@ def legal_page(title, desc, path, body):
 </head>
 <body class="legal">
 <nav>
-  <a class="nav-brand" href="/"><img class="nav-logo" src="/img/logo.png" alt="VIAL Brasilis"><span class="nav-name">VIAL Brasilis</span></a>
+  <a class="nav-brand" href="/"><img class="nav-logo" src="/img/vm-logo.png" alt="V&amp;M"><span class="nav-name">V&amp;M<small>VIAL Brasilis</small></span></a>
   <div class="nav-links"><a href="/">&larr; Home</a></div>
 </nav>
 <main id="main" class="legal-main"><div class="container legal-container">
@@ -289,6 +332,11 @@ def main():
         write(PATH[lang] + 'index.html', build_home(lang, tpl))
     for lang in BRASIL_PATH:
         write(BRASIL_PATH[lang] + 'index.html', brasil_page(lang))
+    ttpl = open(os.path.join(ROOT, 'src', 'traduzione.template.html'), encoding='utf-8').read()
+    for lang in TRAD_PATH:
+        write(TRAD_PATH[lang] + 'index.html', build_home(lang, ttpl, TRAD_META, TRAD_PATH))
+    for lang in DIAG_PATH:
+        write(DIAG_PATH[lang] + 'index.html', diag_page(lang))
     for page, (title, desc) in LEGAL.items():
         src = open(os.path.join(ROOT, 'src', page + '.body.html'), encoding='utf-8').read()
         write('/%s/index.html' % page, legal_page(title, desc, '/%s/' % page, src))
@@ -301,6 +349,14 @@ def main():
     balts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>\n' % (BASE, BRASIL_PATH['it'])
     for l in BRASIL_PATH:
         urls += '  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n%s  </url>\n' % (BASE, BRASIL_PATH[l], LASTMOD, balts)
+    dalts = ''.join('    <xhtml:link rel="alternate" hreflang="%s" href="%s%s"/>\n' % (HTMLLANG[l], BASE, DIAG_PATH[l]) for l in DIAG_PATH)
+    dalts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>\n' % (BASE, DIAG_PATH['it'])
+    for l in DIAG_PATH:
+        urls += '  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n%s  </url>\n' % (BASE, DIAG_PATH[l], LASTMOD, dalts)
+    talts = ''.join('    <xhtml:link rel="alternate" hreflang="%s" href="%s%s"/>\n' % (HTMLLANG[l], BASE, TRAD_PATH[l]) for l in TRAD_PATH)
+    talts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>\n' % (BASE, TRAD_PATH['it'])
+    for l in TRAD_PATH:
+        urls += '  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n%s  </url>\n' % (BASE, TRAD_PATH[l], LASTMOD, talts)
     for p in LEGAL:
         urls += '  <url>\n    <loc>%s/%s/</loc>\n    <lastmod>%s</lastmod>\n  </url>\n' % (BASE, p, LASTMOD)
     write('/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls + '</urlset>\n')

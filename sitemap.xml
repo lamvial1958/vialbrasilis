@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://vialbrasilis.it/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://vialbrasilis.it/en/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://vialbrasilis.it/pt/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/"/>
@@ -26,24 +26,72 @@
   </url>
   <url>
     <loc>https://vialbrasilis.it/brasile/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/brasile/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/brasil/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/brasile/"/>
   </url>
   <url>
     <loc>https://vialbrasilis.it/pt/brasil/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/brasile/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/brasil/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/brasile/"/>
   </url>
   <url>
+    <loc>https://vialbrasilis.it/diagnosi/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/diagnosi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/diagnosis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/diagnosi/"/>
+  </url>
+  <url>
+    <loc>https://vialbrasilis.it/en/diagnosis/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/diagnosi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/diagnosis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/diagnosi/"/>
+  </url>
+  <url>
+    <loc>https://vialbrasilis.it/pt/diagnostico/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/diagnosi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/diagnosis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/diagnosi/"/>
+  </url>
+  <url>
+    <loc>https://vialbrasilis.it/traduzione/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/traduzione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/translation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/traducao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/traduzione/"/>
+  </url>
+  <url>
+    <loc>https://vialbrasilis.it/en/translation/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/traduzione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/translation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/traducao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/traduzione/"/>
+  </url>
+  <url>
+    <loc>https://vialbrasilis.it/pt/traducao/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://vialbrasilis.it/traduzione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vialbrasilis.it/en/translation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://vialbrasilis.it/pt/traducao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vialbrasilis.it/traduzione/"/>
+  </url>
+  <url>
     <loc>https://vialbrasilis.it/privacy/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
   <url>
     <loc>https://vialbrasilis.it/cookie/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
   </url>
 </urlset>

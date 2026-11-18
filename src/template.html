@@ -11,15 +11,16 @@
 <a class="skip-link" href="#main">{{SKIP}}</a>
 
 <nav>
-  <a class="nav-brand" href="#">
-    <img class="nav-logo" src="/img/logo.png" alt="VIAL Brasilis">
-    <span class="nav-name">VIAL Brasilis</span>
+  <a class="nav-brand" href="{{HOME}}">
+    <img class="nav-logo" src="/img/vm-logo.png" alt="V&amp;M">
+    <span class="nav-name">V&amp;M<small>VIAL Brasilis</small></span>
   </a>
   <div class="nav-links">
-    <a href="#servizi" data-i18n="nav_services">Servizi</a>
-    <a href="#tariffe" data-i18n="nav_pricing">Tariffe</a>
-    <a href="#about" data-i18n="nav_about">Chi siamo</a>
-    <a href="#contatti" data-i18n="nav_contact">Contatti</a>
+    <a href="{{HOME}}#come" data-i18n="nav_how">Come funziona</a>
+    <a href="{{HOME}}#tariffe" data-i18n="nav_pricing">Tariffe</a>
+    <a href="{{TRADHREF}}" data-i18n="nav_trans">Traduzione</a>
+    <a href="{{HOME}}#about" data-i18n="nav_about">Chi sono</a>
+    <a href="{{HOME}}#contatti" data-i18n="nav_contact">Contatti</a>
     {{NAVBRASIL}}
     <div class="lang-switcher" role="group" aria-label="Lingua / Language / Idioma">{{LANGSWITCH}}</div>
   </div>
@@ -29,73 +30,164 @@
 <section class="hero">
   <div class="hero-diagonal"></div>
   <div class="hero-accent"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">VIAL Brasilis &middot; PT &harr; IT &harr; EN</div>
-    <h1 class="hero-title" data-lang="it active">La vostra <span>voce</span> nei mercati<br>lusofoni e anglofoni</h1>
-    <h1 class="hero-title" data-lang="en">Your <span>voice</span> in<br>Lusophone &amp; Anglophone markets</h1>
-    <h1 class="hero-title" data-lang="pt">A sua <span>voz</span> nos mercados<br>lus&oacute;fonos e angl&oacute;fonos</h1>
-    <p class="hero-subtitle" data-lang="it active">Traduzione, interpretariato fieristico e formazione linguistica aziendale. Ingegnere chimico con oltre 40 anni di esperienza tra direzione industriale, consulenza e sviluppo commerciale, residente in Veneto.</p>
-    <p class="hero-subtitle" data-lang="en">Translation, trade fair interpretation and corporate language training. Chemical engineer with over 40 years of experience across industrial management, consulting and commercial development, based in Veneto, Italy.</p>
-    <p class="hero-subtitle" data-lang="pt">Tradu&ccedil;&atilde;o, interpreta&ccedil;&atilde;o em feiras e forma&ccedil;&atilde;o lingu&iacute;stica empresarial. Engenheiro qu&iacute;mico com mais de 40 anos de experi&ecirc;ncia em dire&ccedil;&atilde;o industrial, consultoria e desenvolvimento comercial, residente no V&ecirc;neto, It&aacute;lia.</p>
-    <div class="hero-langs">
-      <span class="hero-lang-tag">&#127463;&#127479; Portugu&ecirc;s</span>
-      <span class="hero-lang-tag">&#127470;&#127481; Italiano</span>
-      <span class="hero-lang-tag">&#127468;&#127463; English</span>
-    </div>
-    <div class="hero-cta">
-      <a href="#contatti" class="btn-primary" data-i18n="cta_quote">Richiedi un preventivo</a>
-      <a href="#servizi" class="btn-secondary" data-i18n="cta_services">Scopri i servizi</a>
-    </div>
-  </div>
   <div class="hero-visual">
-    <div class="hero-logo-wrap">
-      <img class="hero-logo" src="/img/logo.png" alt="VIAL Brasilis">
+    <div class="hero-callout">
+      <div class="hero-eyebrow"><span data-lang="it active">Diagnosi di cassa e margini</span><span data-lang="en">Cash and margin diagnostics</span><span data-lang="pt">Diagn&oacute;stico de caixa e margem</span></div>
+<h2 class="hero-title" data-lang="it active">Dove si ferma la vostra <span>cassa</span>?</h2>
+<h2 class="hero-title" data-lang="en">Where does your <span>cash</span> get stuck?</h2>
+<h2 class="hero-title" data-lang="pt">Onde o seu <span>caixa</span> fica parado?</h2>
+<p class="hero-subtitle" data-lang="it active">Diagnosi rapida di cassa e margini per le aziende, letta per settore: piano a 30, 60 e 90 giorni con l&#39;effetto stimato in euro.</p>
+<p class="hero-subtitle" data-lang="en">Fast cash-and-margin diagnostics for companies, read by sector: a 30-, 60- and 90-day plan with the estimated effect in euros.</p>
+<p class="hero-subtitle" data-lang="pt">Diagn&oacute;stico r&aacute;pido de caixa e margem para empresas, lido por setor: plano de 30, 60 e 90 dias com o efeito estimado em euros.</p>
+      <div class="hero-langs">
+        <span class="hero-lang-tag"><span data-lang="it active">Cassa</span><span data-lang="en">Cash</span><span data-lang="pt">Caixa</span></span>
+        <span class="hero-lang-tag"><span data-lang="it active">Margini</span><span data-lang="en">Margins</span><span data-lang="pt">Margens</span></span>
+        <span class="hero-lang-tag">30 &middot; 60 &middot; 90</span>
+      </div>
+      <div class="hero-cta">
+        <a href="{{HOME}}#contatti" class="btn-primary"><span data-lang="it active">Richiedi un preventivo</span><span data-lang="en">Request a quote</span><span data-lang="pt">Solicitar or&ccedil;amento</span></a>
+        <a href="#come" class="btn-secondary"><span data-lang="it active">Come funziona</span><span data-lang="en">How it works</span><span data-lang="pt">Como funciona</span></a>
+      </div>
     </div>
   </div>
   <div class="hero-stats">
-    <div><div class="hero-stat-num">40<span>+</span></div><div class="hero-stat-label" data-i18n="stat_years">ANNI DI LEADERSHIP</div></div>
-    <div><div class="hero-stat-num">3</div><div class="hero-stat-label" data-i18n="stat_langs">LINGUE OPERATIVE</div></div>
-    <div><div class="hero-stat-num">PT<span>&harr;</span>IT<span>&harr;</span>EN</div><div class="hero-stat-label" data-i18n="stat_pairs">COPPIE LINGUISTICHE</div></div>
+    <div><div class="hero-stat-num">40<span>+</span></div><div class="hero-stat-label" data-i18n="stat_years">ANNI DI ESPERIENZA</div></div>
+    <div><div class="hero-stat-num">8</div><div class="hero-stat-label" data-i18n="stat_types">TIPI DI AZIENDA, SOGLIE PER SETTORE</div></div>
+    <div><div class="hero-stat-num">30<span>&middot;</span>60<span>&middot;</span>90</div><div class="hero-stat-label" data-i18n="stat_plan">GIORNI: IL PIANO D&#39;AZIONE</div></div>
   </div>
 </section>
 
-<section class="services" id="servizi">
+<section class="services areas" id="problema">
   <div class="container">
-    <div class="section-eyebrow" data-i18n="services_eyebrow">I nostri servizi</div>
-    <h2 class="section-title" data-lang="it active">Tre servizi, una competenza unica</h2>
-    <h2 class="section-title" data-lang="en">Three services, one unique expertise</h2>
-    <h2 class="section-title" data-lang="pt">Tr&ecirc;s servi&ccedil;os, uma compet&ecirc;ncia &uacute;nica</h2>
+    <div class="section-eyebrow"><span data-lang="it active">Il problema</span><span data-lang="en">The problem</span><span data-lang="pt">O problema</span></div>
+<h2 class="section-title" data-lang="it active">Il bilancio mostra l&#39;utile, la banca mostra un&#39;altra cosa</h2>
+<h2 class="section-title" data-lang="en">The accounts show a profit, the bank shows something else</h2>
+<h2 class="section-title" data-lang="pt">O balan&ccedil;o mostra lucro, o banco mostra outra coisa</h2>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">&#128196;</div>
-        <div class="service-name" data-lang="it active">Traduzione non giurata</div>
-        <div class="service-name" data-lang="en">Non-sworn Translation</div>
-        <div class="service-name" data-lang="pt">Tradu&ccedil;&atilde;o n&atilde;o juramentada</div>
-        <p class="service-desc" data-lang="it active">Cataloghi commerciali, documentazione tecnica, contratti, e-mail e corrispondenza aziendale. In tutte le combinazioni IT&harr;PT&harr;EN.</p>
-        <p class="service-desc" data-lang="en">Commercial catalogues, technical documentation, contracts, emails and business correspondence. All combinations IT&harr;PT&harr;EN.</p>
-        <p class="service-desc" data-lang="pt">Cat&aacute;logos comerciais, documenta&ccedil;&atilde;o t&eacute;cnica, contratos, e-mails e correspond&ecirc;ncia empresarial. Em todas as combina&ccedil;&otilde;es IT&harr;PT&harr;EN.</p>
-        <div class="service-langs"><span class="service-lang">IT&harr;PT</span><span class="service-lang">IT&harr;EN</span><span class="service-lang">PT&harr;EN</span></div>
+        <div class="service-icon">&#128176;</div>
+        <div class="service-name"><span data-lang="it active">Cassa bloccata</span><span data-lang="en">Cash tied up</span><span data-lang="pt">Caixa preso</span></div>
+<p class="service-desc" data-lang="it active">Clienti che pagano tardi, magazzino fermo, fornitori da pagare prima di incassare: il denaro c&#39;&egrave;, ma non &egrave; dove serve.</p>
+<p class="service-desc" data-lang="en">Customers paying late, idle inventory, suppliers to pay before you collect: the money exists, but not where you need it.</p>
+<p class="service-desc" data-lang="pt">Clientes que pagam tarde, estoque parado, fornecedores para pagar antes de receber: o dinheiro existe, mas n&atilde;o est&aacute; onde precisa.</p>
       </div>
       <div class="service-card accent-red">
-        <div class="service-icon">&#127908;</div>
-        <div class="service-name" data-lang="it active">Interpretariato fieristico</div>
-        <div class="service-name" data-lang="en">Trade Fair Interpretation</div>
-        <div class="service-name" data-lang="pt">Interpreta&ccedil;&atilde;o em feiras</div>
-        <p class="service-desc" data-lang="it active">Supporto in tempo reale durante trattative commerciali. Veronafiere, Fiera di Vicenza, Fiera di Padova e oltre. Mezza giornata o giornata intera.</p>
-        <p class="service-desc" data-lang="en">Real-time support during commercial negotiations. Veronafiere, Fiera di Vicenza, Fiera di Padova and beyond. Half-day or full-day.</p>
-        <p class="service-desc" data-lang="pt">Suporte em tempo real durante negocia&ccedil;&otilde;es comerciais. Veronafiere, Fiera di Vicenza, Fiera di Padova e outros. Meio dia ou dia inteiro.</p>
-        <div class="service-langs"><span class="service-lang">PT&harr;IT</span><span class="service-lang">EN&harr;IT</span></div>
+        <div class="service-icon">&#128201;</div>
+        <div class="service-name"><span data-lang="it active">Margini che si assottigliano</span><span data-lang="en">Shrinking margins</span><span data-lang="pt">Margens que encolhem</span></div>
+<p class="service-desc" data-lang="it active">Il fatturato cresce ma il margine cala: costi di servizi, personale o materie prime salgono pi&ugrave; dei ricavi, e nessuno se ne accorge in tempo.</p>
+<p class="service-desc" data-lang="en">Revenue grows but margin falls: service, payroll or raw-material costs rise faster than sales, and nobody notices in time.</p>
+<p class="service-desc" data-lang="pt">A receita cresce, mas a margem cai: custos de servi&ccedil;os, pessoal ou mat&eacute;ria-prima sobem mais que as vendas, e ningu&eacute;m percebe a tempo.</p>
       </div>
       <div class="service-card accent-gold">
-        <div class="service-icon">&#127891;</div>
-        <div class="service-name" data-lang="it active">Formazione linguistica aziendale</div>
-        <div class="service-name" data-lang="en">Corporate Language Training</div>
-        <div class="service-name" data-lang="pt">Forma&ccedil;&atilde;o lingu&iacute;stica empresarial</div>
-        <p class="service-desc" data-lang="it active">Corsi di portoghese e inglese commerciale per team export. Curricolo strutturato di 60 lezioni, CEFR PRE-A1&rarr;B2. Online o in presenza.</p>
-        <p class="service-desc" data-lang="en">Portuguese and business English courses for export teams. 60-lesson curriculum, CEFR PRE-A1&rarr;B2. Online or in-person.</p>
-        <p class="service-desc" data-lang="pt">Cursos de portugu&ecirc;s e ingl&ecirc;s comercial para equipes de exporta&ccedil;&atilde;o. 60 li&ccedil;&otilde;es, QECR PRE-A1&rarr;B2. Online ou presencial.</p>
-        <div class="service-langs"><span class="service-lang">Portugu&ecirc;s</span><span class="service-lang">Inglese Business</span><span class="service-lang">CEFR</span></div>
+        <div class="service-icon">&#129517;</div>
+        <div class="service-name"><span data-lang="it active">Nessuna priorit&agrave; chiara</span><span data-lang="en">No clear priority</span><span data-lang="pt">Nenhuma prioridade clara</span></div>
+<p class="service-desc" data-lang="it active">Molti numeri, poche decisioni. Serve sapere cosa fare per primo, chi lo fa e quanto vale in euro.</p>
+<p class="service-desc" data-lang="en">Many numbers, few decisions. You need to know what to do first, who does it and what it is worth in euros.</p>
+<p class="service-desc" data-lang="pt">Muitos n&uacute;meros, poucas decis&otilde;es. &Eacute; preciso saber o que fazer primeiro, quem faz e quanto vale em euros.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="come">
+  <div class="container">
+    <div class="section-eyebrow"><span data-lang="it active">Come funziona</span><span data-lang="en">How it works</span><span data-lang="pt">Como funciona</span></div>
+<h2 class="section-title" data-lang="it active">Dai vostri bilanci a un piano d&#39;azione, in quattro passi</h2>
+<h2 class="section-title" data-lang="en">From your accounts to an action plan, in four steps</h2>
+<h2 class="section-title" data-lang="pt">Dos seus balan&ccedil;os a um plano de a&ccedil;&atilde;o, em quatro passos</h2>
+    <div class="steps">
+      <div class="step"><div class="step-n">1</div><div class="step-t"><span data-lang="it active">Dati</span><span data-lang="en">Data</span><span data-lang="pt">Dados</span></div><p class="step-d" data-lang="it active">Mi inviate il bilancio (2&ndash;3 anni) e i dati di vendite, crediti e magazzino.</p>
+<p class="step-d" data-lang="en">You send me the financial statements (2&ndash;3 years) and the sales, receivables and inventory data.</p>
+<p class="step-d" data-lang="pt">Voc&ecirc; me envia o balan&ccedil;o (2&ndash;3 anos) e os dados de vendas, contas a receber e estoque.</p>
+</div>
+      <div class="step"><div class="step-n">2</div><div class="step-t"><span data-lang="it active">Analisi</span><span data-lang="en">Analysis</span><span data-lang="pt">An&aacute;lise</span></div><p class="step-d" data-lang="it active">Controllo che i numeri quadrino e calcolo gli indicatori con le soglie del vostro settore.</p>
+<p class="step-d" data-lang="en">I check that the figures add up and calculate the indicators with your sector&#39;s thresholds.</p>
+<p class="step-d" data-lang="pt">Confiro se os n&uacute;meros fecham e calculo os indicadores com os limites do seu setor.</p>
+</div>
+      <div class="step"><div class="step-n">3</div><div class="step-t"><span data-lang="it active">Piano</span><span data-lang="en">Plan</span><span data-lang="pt">Plano</span></div><p class="step-d" data-lang="it active">Individuo i 3&ndash;5 interventi che liberano pi&ugrave; cassa o margine, con l&#39;effetto stimato in euro.</p>
+<p class="step-d" data-lang="en">I identify the 3&ndash;5 actions that release the most cash or margin, with the estimated effect in euros.</p>
+<p class="step-d" data-lang="pt">Identifico as 3&ndash;5 a&ccedil;&otilde;es que liberam mais caixa ou margem, com o efeito estimado em euros.</p>
+</div>
+      <div class="step"><div class="step-n">4</div><div class="step-t"><span data-lang="it active">Incontro</span><span data-lang="en">Meeting</span><span data-lang="pt">Reuni&atilde;o</span></div><p class="step-d" data-lang="it active">Vi presento la relazione e simuliamo insieme gli scenari, presso la vostra sede o in videoconferenza.</p>
+<p class="step-d" data-lang="en">I present the report and we simulate the scenarios together, at your premises or by video call.</p>
+<p class="step-d" data-lang="pt">Apresento o relat&oacute;rio e simulamos os cen&aacute;rios juntos, na sua empresa ou por videoconfer&ecirc;ncia.</p>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="services consulting" id="applicazione">
+  <div class="container">
+    <div class="section-eyebrow"><span data-lang="it active">L&#39;applicazione</span><span data-lang="en">The application</span><span data-lang="pt">O aplicativo</span></div>
+<h2 class="section-title" data-lang="it active">Cosa ricevete: numeri chiari, non un elenco di indici</h2>
+<h2 class="section-title" data-lang="en">What you get: clear numbers, not a list of ratios</h2>
+<h2 class="section-title" data-lang="pt">O que voc&ecirc; recebe: n&uacute;meros claros, n&atilde;o uma lista de &iacute;ndices</h2>
+<p class="mock-note" data-lang="it active">Esempio con dati fittizi (azienda industriale di fantasia). I limiti del semaforo cambiano con il tipo di azienda.</p>
+<p class="mock-note" data-lang="en">Example with fictitious data (an invented industrial company). Traffic-light thresholds change with the type of company.</p>
+<p class="mock-note" data-lang="pt">Exemplo com dados fict&iacute;cios (empresa industrial inventada). Os limites do sem&aacute;foro mudam com o tipo de empresa.</p>
+    <div class="mock-grid">
+      <div class="mock">
+        <div class="mock-h"><span data-lang="it active">Semaforo degli indicatori</span><span data-lang="en">Indicator traffic lights</span><span data-lang="pt">Sem&aacute;foro dos indicadores</span></div>
+        <div class="mock-row"><span class="dot g"></span><span class="mock-l"><span data-lang="it active">Margine EBITDA</span><span data-lang="en">EBITDA margin</span><span data-lang="pt">Margem EBITDA</span></span><span class="mock-v">11,4%</span></div>
+        <div class="mock-row"><span class="dot y"></span><span class="mock-l"><span data-lang="it active">Liquidit&agrave; corrente</span><span data-lang="en">Current ratio</span><span data-lang="pt">Liquidez corrente</span></span><span class="mock-v">1,18</span></div>
+        <div class="mock-row"><span class="dot r"></span><span class="mock-l"><span data-lang="it active">Ciclo finanziario</span><span data-lang="en">Cash cycle</span><span data-lang="pt">Ciclo financeiro</span></span><span class="mock-v">142 <span data-lang="it active">giorni</span><span data-lang="en">days</span><span data-lang="pt">dias</span></span></div>
+        <div class="mock-row"><span class="dot y"></span><span class="mock-l"><span data-lang="it active">Debito netto / EBITDA</span><span data-lang="en">Net debt / EBITDA</span><span data-lang="pt">D&iacute;vida l&iacute;quida / EBITDA</span></span><span class="mock-v">3,1x</span></div>
+        <div class="mock-row"><span class="dot g"></span><span class="mock-l"><span data-lang="it active">Copertura interessi</span><span data-lang="en">Interest cover</span><span data-lang="pt">Cobertura de juros</span></span><span class="mock-v">4,6x</span></div>
+      </div>
+      <div class="mock">
+        <div class="mock-h"><span data-lang="it active">Ciclo di cassa</span><span data-lang="en">Cash cycle</span><span data-lang="pt">Ciclo de caixa</span></div>
+        <div class="bar"><span class="bar-l"><span data-lang="it active">Incasso</span><span data-lang="en">Collection</span><span data-lang="pt">Recebimento</span></span><span class="bar-b" style="width:62%"></span><span class="bar-v">78</span></div>
+        <div class="bar"><span class="bar-l"><span data-lang="it active">Scorta</span><span data-lang="en">Inventory</span><span data-lang="pt">Estoque</span></span><span class="bar-b" style="width:80%"></span><span class="bar-v">100</span></div>
+        <div class="bar"><span class="bar-l"><span data-lang="it active">Pagamento</span><span data-lang="en">Payment</span><span data-lang="pt">Pagamento</span></span><span class="bar-b alt" style="width:30%"></span><span class="bar-v">&minus;36</span></div>
+        <div class="mock-total"><span data-lang="it active">Ciclo: 142 giorni. Ogni 10 giorni in meno liberano circa &euro; 0,9 mln.</span><span data-lang="en">Cycle: 142 days. Each 10 days less releases about &euro; 0.9 m.</span><span data-lang="pt">Ciclo: 142 dias. Cada 10 dias a menos libera cerca de &euro; 0,9 mi.</span></div>
+      </div>
+      <div class="mock">
+        <div class="mock-h"><span data-lang="it active">Piano a 30, 60 e 90 giorni</span><span data-lang="en">30-, 60- and 90-day plan</span><span data-lang="pt">Plano de 30, 60 e 90 dias</span></div>
+        <div class="mock-row"><span class="tag">30</span><span class="mock-l"><span data-lang="it active">Sollecito dei 10 maggiori crediti scaduti</span><span data-lang="en">Chase the 10 largest overdue receivables</span><span data-lang="pt">Cobrar os 10 maiores t&iacute;tulos vencidos</span></span><span class="mock-v">&euro; 0,6 mln</span></div>
+        <div class="mock-row"><span class="tag">60</span><span class="mock-l"><span data-lang="it active">Ridurre il magazzino fermo</span><span data-lang="en">Cut idle inventory</span><span data-lang="pt">Reduzir o estoque parado</span></span><span class="mock-v">&euro; 0,5 mln</span></div>
+        <div class="mock-row"><span class="tag">60</span><span class="mock-l"><span data-lang="it active">Rinegoziare i termini con i 5 maggiori fornitori</span><span data-lang="en">Renegotiate terms with the 5 largest suppliers</span><span data-lang="pt">Renegociar prazos com os 5 maiores fornecedores</span></span><span class="mock-v">&euro; 0,3 mln</span></div>
+        <div class="mock-note2"><span data-lang="it active">Ogni azione ha un responsabile, un indicatore e una stima: ipotesi di lavoro, non previsioni.</span><span data-lang="en">Each action has an owner, an indicator and an estimate: working assumptions, not forecasts.</span><span data-lang="pt">Cada a&ccedil;&atilde;o tem respons&aacute;vel, indicador e estimativa: hip&oacute;teses de trabalho, n&atilde;o previs&otilde;es.</span></div>
+      </div>
+    </div>
+    <p class="consulting-cta"><a class="btn-primary" href="{{DIAGHREF}}"><span data-lang="it active">Cosa ricevete, riservatezza e dettagli</span><span data-lang="en">What you get, confidentiality and details</span><span data-lang="pt">O que voc&ecirc; recebe, confidencialidade e detalhes</span></a></p>
+  </div>
+</section>
+
+<section class="pricing" id="settore">
+  <div class="container">
+    <div class="section-eyebrow"><span data-lang="it active">Perch&eacute; &egrave; diverso</span><span data-lang="en">Why it is different</span><span data-lang="pt">Por que &eacute; diferente</span></div>
+<h2 class="section-title" data-lang="it active">Ogni settore ha i suoi limiti</h2>
+<h2 class="section-title" data-lang="en">Every sector has its own limits</h2>
+<h2 class="section-title" data-lang="pt">Cada setor tem os seus limites</h2>
+<p class="section-lead" data-lang="it active">Una farmacia, un&#39;industria e una societ&agrave; di software non si giudicano con le stesse soglie. L&#39;analisi distingue otto tipi di azienda (industria, commercio, servizi, trasporti, costruzioni, agro, sanit&agrave;, servizi regolati) e legge gli indicatori di conseguenza, partendo dal codice ATECO. Ogni cifra &egrave; tracciabile: dichiaro cosa &egrave; dato, cosa &egrave; calcolato e cosa &egrave; stimato.</p>
+<p class="section-lead" data-lang="en">A pharmacy, a factory and a software company are not judged by the same thresholds. The analysis distinguishes eight types of company (industry, trade, services, transport, construction, agriculture, healthcare, regulated services) and reads the indicators accordingly, starting from the ATECO code. Every figure is traceable: I state what is given, what is calculated and what is estimated.</p>
+<p class="section-lead" data-lang="pt">Uma farm&aacute;cia, uma ind&uacute;stria e uma empresa de software n&atilde;o se julgam pelos mesmos limites. A an&aacute;lise distingue oito tipos de empresa (ind&uacute;stria, com&eacute;rcio, servi&ccedil;os, transporte, constru&ccedil;&atilde;o, agro, sa&uacute;de, servi&ccedil;os regulados) e l&ecirc; os indicadores de acordo, a partir do c&oacute;digo ATECO. Cada n&uacute;mero &eacute; rastre&aacute;vel: informo o que &eacute; dado, o que &eacute; calculado e o que &eacute; estimado.</p>
+  </div>
+</section>
+
+<section class="services consulting" id="riservatezza">
+  <div class="container">
+    <div class="section-eyebrow"><span data-lang="it active">Riservatezza</span><span data-lang="en">Confidentiality</span><span data-lang="pt">Confidencialidade</span></div>
+<h2 class="section-title" data-lang="it active">I vostri dati restano vostri</h2>
+<h2 class="section-title" data-lang="en">Your data stay yours</h2>
+<h2 class="section-title" data-lang="pt">Os seus dados continuam seus</h2>
+    <div class="services-grid four">
+      <div class="service-card"><div class="service-icon">&#128221;</div><div class="service-name"><span data-lang="it active">NDA prima di tutto</span><span data-lang="en">NDA first</span><span data-lang="pt">NDA antes de tudo</span></div><p class="service-desc" data-lang="it active">Accordo di riservatezza firmato prima di ricevere qualsiasi dato.</p>
+<p class="service-desc" data-lang="en">Non-disclosure agreement signed before I receive any data.</p>
+<p class="service-desc" data-lang="pt">Acordo de confidencialidade assinado antes de receber qualquer dado.</p>
+</div>
+      <div class="service-card accent-red"><div class="service-icon">&#128274;</div><div class="service-name"><span data-lang="it active">Solo sul mio computer</span><span data-lang="en">Only on my computer</span><span data-lang="pt">S&oacute; no meu computador</span></div><p class="service-desc" data-lang="it active">Disco cifrato, nessun cloud, nessuna cessione a terzi.</p>
+<p class="service-desc" data-lang="en">Encrypted disk, no cloud, nothing shared with third parties.</p>
+<p class="service-desc" data-lang="pt">Disco cifrado, sem nuvem, nada repassado a terceiros.</p>
+</div>
+      <div class="service-card accent-gold"><div class="service-icon">&#128465;&#65039;</div><div class="service-name"><span data-lang="it active">Cancellazione</span><span data-lang="en">Deletion</span><span data-lang="pt">Exclus&atilde;o</span></div><p class="service-desc" data-lang="it active">A fine incarico cancello dati e copie di sicurezza, con conferma scritta.</p>
+<p class="service-desc" data-lang="en">At the end I delete data and backups, with written confirmation.</p>
+<p class="service-desc" data-lang="pt">No fim apago dados e c&oacute;pias de seguran&ccedil;a, com confirma&ccedil;&atilde;o por escrito.</p>
+</div>
+      <div class="service-card"><div class="service-icon">&#128202;</div><div class="service-name"><span data-lang="it active">Uso anonimo, solo se volete</span><span data-lang="en">Anonymous use, only if you wish</span><span data-lang="pt">Uso an&ocirc;nimo, s&oacute; se quiser</span></div><p class="service-desc" data-lang="it active">Solo indici e percentuali, senza nomi n&eacute; importi, e solo con il vostro consenso scritto.</p>
+<p class="service-desc" data-lang="en">Only ratios and percentages, no names or amounts, and only with your written consent.</p>
+<p class="service-desc" data-lang="pt">S&oacute; &iacute;ndices e percentuais, sem nomes nem valores, e s&oacute; com o seu consentimento por escrito.</p>
+</div>
     </div>
   </div>
 </section>
@@ -105,41 +197,29 @@
     <div class="pricing-header">
       <div>
         <div class="section-eyebrow" data-i18n="pricing_eyebrow">Tariffe</div>
-        <h2 class="section-title" data-lang="it active">Prezzi trasparenti, senza sorprese</h2>
-        <h2 class="section-title" data-lang="en">Transparent pricing, no surprises</h2>
-        <h2 class="section-title" data-lang="pt">Pre&ccedil;os transparentes, sem surpresas</h2>
+<h2 class="section-title" data-lang="it active">Prezzi chiari, senza sorprese</h2>
+<h2 class="section-title" data-lang="en">Clear pricing, no surprises</h2>
+<h2 class="section-title" data-lang="pt">Pre&ccedil;os claros, sem surpresas</h2>
+<p class="pricing-note" data-lang="it active">Tutti i prezzi sono IVA esclusa. Pagamento: 50% alla firma e 50% alla consegna della relazione. Spese di viaggio, se necessarie, a parte e concordate in anticipo.</p>
+<p class="pricing-note" data-lang="en">All prices exclude VAT. Payment: 50% on signing and 50% on delivery of the report. Travel costs, if needed, are extra and agreed in advance.</p>
+<p class="pricing-note" data-lang="pt">Todos os valores s&atilde;o sem IVA. Pagamento: 50% na assinatura e 50% na entrega do relat&oacute;rio. Despesas de viagem, se necess&aacute;rias, &agrave; parte e combinadas antes.</p>
       </div>
-      <p class="pricing-note" data-lang="it active">Tutti i prezzi sono IVA esclusa. Per grandi volumi o collaborazioni continuative, contattateci per un preventivo personalizzato.</p>
-      <p class="pricing-note" data-lang="en">All prices exclude VAT. For large volumes or ongoing collaborations, contact us for a custom quote.</p>
-      <p class="pricing-note" data-lang="pt">Todos os valores s&atilde;o sem IVA. Para grandes volumes ou colabora&ccedil;&otilde;es cont&iacute;nuas, entre em contato para solicitar um or&ccedil;amento personalizado.</p>
     </div>
     <div class="pricing-grid">
       <div class="pricing-block">
-        <div class="pricing-block-header">&#128196; <span data-lang="it active">Traduzione non giurata</span><span data-lang="en">Non-sworn Translation</span><span data-lang="pt">Tradu&ccedil;&atilde;o n&atilde;o juramentada</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Tariffa per parola</span><span class="pricing-label" data-lang="en">Per-word rate</span><span class="pricing-label" data-lang="pt">Tarifa por palavra</span><span class="pricing-value highlight">&euro; 0,08/parola</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Minimo fatturabile</span><span class="pricing-label" data-lang="en">Minimum charge</span><span class="pricing-label" data-lang="pt">M&iacute;nimo fatur&aacute;vel</span><span class="pricing-value">&euro; 80,00</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Combinazioni</span><span class="pricing-label" data-lang="en">Language pairs</span><span class="pricing-label" data-lang="pt">Combina&ccedil;&otilde;es</span><span class="pricing-value">IT&harr;PT &middot; IT&harr;EN &middot; PT&harr;EN</span></div>
+        <div class="pricing-block-header red">&#128200; <span data-lang="it active">Diagnosi</span><span data-lang="en">Diagnostics</span><span data-lang="pt">Diagn&oacute;stico</span></div>
+        <div class="pricing-row"><span class="pricing-label"><span data-lang="it active">Bilancio + dati commerciali, crediti e magazzino</span><span data-lang="en">Financial statements + sales, receivables and inventory</span><span data-lang="pt">Balan&ccedil;o + dados comerciais, receb&iacute;veis e estoque</span></span><span class="pricing-value highlight">&euro; 2.200</span></div>
+        <div class="pricing-row"><span class="pricing-label"><span data-lang="it active">Semaforo, ciclo di cassa, piano 30/60/90 e simulatore</span><span data-lang="en">Traffic lights, cash cycle, 30/60/90 plan and simulator</span><span data-lang="pt">Sem&aacute;foro, ciclo de caixa, plano 30/60/90 e simulador</span></span><span class="pricing-value">&#10003;</span></div>
+        <div class="pricing-row"><span class="pricing-label"><span data-lang="it active">Relazione scritta e due incontri</span><span data-lang="en">Written report and two meetings</span><span data-lang="pt">Relat&oacute;rio escrito e duas reuni&otilde;es</span></span><span class="pricing-value">&#10003;</span></div>
       </div>
       <div class="pricing-block">
-        <div class="pricing-block-header red">&#127908; <span data-lang="it active">Interpretariato fieristico</span><span data-lang="en">Trade Fair Interpretation</span><span data-lang="pt">Interpreta&ccedil;&atilde;o em feiras</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Mezza giornata (fino a 4h)</span><span class="pricing-label" data-lang="en">Half day (up to 4h)</span><span class="pricing-label" data-lang="pt">Meio dia (at&eacute; 4h)</span><span class="pricing-value highlight">&euro; 300</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Giornata intera (fino a 8h)</span><span class="pricing-label" data-lang="en">Full day (up to 8h)</span><span class="pricing-label" data-lang="pt">Dia inteiro (at&eacute; 8h)</span><span class="pricing-value highlight">&euro; 520</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Trasferta e vitto</span><span class="pricing-label" data-lang="en">Travel &amp; meals</span><span class="pricing-label" data-lang="pt">Deslocamento e refei&ccedil;&otilde;es</span><span class="pricing-value" data-lang="it active">A carico del cliente</span><span class="pricing-value" data-lang="en">Client's expense</span><span class="pricing-value" data-lang="pt">Por conta do cliente</span></div>
-      </div>
-      <div class="pricing-block">
-        <div class="pricing-block-header gold">&#127891; <span data-lang="it active">Corsi aziendali &mdash; Sessioni</span><span data-lang="en">Corporate Courses &mdash; Sessions</span><span data-lang="pt">Cursos empresariais &mdash; Sess&otilde;es</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Sessione individuale</span><span class="pricing-label" data-lang="en">Individual session</span><span class="pricing-label" data-lang="pt">Sess&atilde;o individual</span><span class="pricing-value highlight">&euro; 70/ora</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Gruppo fino a 6 persone</span><span class="pricing-label" data-lang="en">Group up to 6 people</span><span class="pricing-label" data-lang="pt">Grupo at&eacute; 6 pessoas</span><span class="pricing-value highlight">&euro; 120/ora</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Gruppo 7&ndash;15 persone</span><span class="pricing-label" data-lang="en">Group 7&ndash;15 people</span><span class="pricing-label" data-lang="pt">Grupo 7&ndash;15 pessoas</span><span class="pricing-value highlight">&euro; 160/ora</span></div>
-      </div>
-      <div class="pricing-block">
-        <div class="pricing-block-header dark">&#128230; <span data-lang="it active">Pacchetti 20 ore</span><span data-lang="en">20-Hour Packages</span><span data-lang="pt">Pacotes 20 horas</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Individuale</span><span class="pricing-label" data-lang="en">Individual</span><span class="pricing-label" data-lang="pt">Individual</span><span class="pricing-value highlight">&euro; 1.350</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Gruppo fino a 6</span><span class="pricing-label" data-lang="en">Group up to 6</span><span class="pricing-label" data-lang="pt">Grupo at&eacute; 6</span><span class="pricing-value highlight">&euro; 2.200</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Gruppo 7&ndash;15</span><span class="pricing-label" data-lang="en">Group 7&ndash;15</span><span class="pricing-label" data-lang="pt">Grupo 7&ndash;15</span><span class="pricing-value highlight">&euro; 2.900</span></div>
-        <div class="pricing-row"><span class="pricing-label" data-lang="it active">Supporto export</span><span class="pricing-label" data-lang="en">Export support</span><span class="pricing-label" data-lang="pt">Suporte export</span><span class="pricing-value" data-lang="it active">Su preventivo &mdash; min. &euro; 500</span><span class="pricing-value" data-lang="en">On request &mdash; min. &euro; 500</span><span class="pricing-value" data-lang="pt">Sob consulta &mdash; m&iacute;n. &euro; 500</span></div>
+        <div class="pricing-block-header dark">&#129309; <span data-lang="it active">Accompagnamento trimestrale (facoltativo)</span><span data-lang="en">Quarterly follow-up (optional)</span><span data-lang="pt">Acompanhamento trimestral (opcional)</span></div>
+        <div class="pricing-row"><span class="pricing-label"><span data-lang="it active">Per trimestre, dopo la diagnosi</span><span data-lang="en">Per quarter, after the diagnostics</span><span data-lang="pt">Por trimestre, depois do diagn&oacute;stico</span></span><span class="pricing-value highlight">&euro; 2.200</span></div>
+        <div class="pricing-row"><span class="pricing-label"><span data-lang="it active">Dati aggiornati ogni mese, relazione sugli indicatori, incontro di revisione</span><span data-lang="en">Monthly data updates, indicators report, review meeting</span><span data-lang="pt">Dados atualizados todo m&ecirc;s, relat&oacute;rio de indicadores, reuni&atilde;o de revis&atilde;o</span></span><span class="pricing-value">&#10003;</span></div>
+        <div class="pricing-row"><span class="pricing-label"><span data-lang="it active">Interrompibile a fine trimestre, preavviso scritto di 15 giorni lavorativi</span><span data-lang="en">Cancel at quarter end, 15 business days&#39; written notice</span><span data-lang="pt">Interrompa no fim do trimestre, aviso escrito de 15 dias &uacute;teis</span></span><span class="pricing-value">&#10003;</span></div>
       </div>
     </div>
+    <p class="consulting-cta"><a class="btn-primary" href="{{HOME}}#contatti"><span data-lang="it active">Richiedi un preventivo</span><span data-lang="en">Request a quote</span><span data-lang="pt">Solicitar or&ccedil;amento</span></a> <a class="btn-link" href="{{DIAGHREF}}"><span data-lang="it active">Dettagli e condizioni</span><span data-lang="en">Details and terms</span><span data-lang="pt">Detalhes e condi&ccedil;&otilde;es</span></a></p>
   </div>
 </section>
 
@@ -147,13 +227,16 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-content">
-        <div class="section-eyebrow">Luiz Antonio M. Vial</div>
-        <h2 class="section-title" data-lang="it active">Non solo un traduttore. Un partner commerciale.</h2>
-        <h2 class="section-title" data-lang="en">Not just a translator. A commercial partner.</h2>
-        <h2 class="section-title" data-lang="pt">N&atilde;o apenas um tradutor. Um parceiro comercial.</h2>
-        <p class="about-text" data-lang="it active">Ingegnere chimico di formazione, con un Master in Ingegneria della Produzione e dei Sistemi, ho oltre 40 anni di esperienza tra direzione di stabilimento, consulenza di produttivit&agrave; e sviluppo commerciale &mdash; dal 2011 come Direttore Commerciale di iBus Group, azienda brasiliana di tecnologia per il trasporto passeggeri.</p>
-        <p class="about-text" data-lang="en">Chemical engineer by training, with a Master&#39;s in Production and Systems Engineering, I have over 40 years of experience in plant management, productivity consulting and commercial development &mdash; since 2011 as Commercial Director of iBus Group, a Brazilian passenger-transport technology company.</p>
-        <p class="about-text" data-lang="pt">Engenheiro qu&iacute;mico de forma&ccedil;&atilde;o, com Mestrado em Engenharia de Produ&ccedil;&atilde;o e Sistemas, tenho mais de 40 anos de experi&ecirc;ncia em dire&ccedil;&atilde;o de planta industrial, consultoria de produtividade e desenvolvimento comercial &mdash; desde 2011 como Diretor Comercial da iBus Group, empresa brasileira de tecnologia para transporte de passageiros.</p>
+        <div class="section-eyebrow">Luiz Antonio M. Vial &middot; V&amp;M</div>
+        <h2 class="section-title" data-lang="it active">Chi sono</h2>
+        <h2 class="section-title" data-lang="en">About me</h2>
+        <h2 class="section-title" data-lang="pt">Quem sou</h2>
+        <p class="about-text" data-lang="it active">Ingegnere chimico di formazione, con un Master in Ingegneria della Produzione e dei Sistemi, ho oltre 40 anni di esperienza tra direzione di stabilimento, consulenza di produttivit&agrave; e sviluppo commerciale.</p>
+        <p class="about-text" data-lang="en">Chemical engineer by training, with a Master&#39;s in Production and Systems Engineering, I have over 40 years of experience in plant management, productivity consulting and commercial development.</p>
+        <p class="about-text" data-lang="pt">Engenheiro qu&iacute;mico de forma&ccedil;&atilde;o, com Mestrado em Engenharia de Produ&ccedil;&atilde;o e Sistemas, tenho mais de 40 anos de experi&ecirc;ncia em dire&ccedil;&atilde;o de planta industrial, consultoria de produtividade e desenvolvimento comercial.</p>
+        <p class="about-text" data-lang="it active">Alla direzione di stabilimento e alla consulenza di produttivit&agrave; affianco oggi la diagnosi di cassa e margini per le aziende, letta per settore: lo stesso metodo, con i numeri in mano.</p>
+        <p class="about-text" data-lang="en">To plant management and productivity consulting I now add cash-and-margin diagnostics for companies, read by sector: the same method, with the numbers in hand.</p>
+        <p class="about-text" data-lang="pt">&Agrave; dire&ccedil;&atilde;o de planta e &agrave; consultoria de produtividade somo hoje o diagn&oacute;stico de caixa e margem para empresas, lido por setor: o mesmo m&eacute;todo, com os n&uacute;meros na m&atilde;o.</p>
         <p class="about-text" data-lang="it active">Nato in Brasile, italiano per origine e cittadinanza, residente in Veneto: opero professionalmente in portoghese (madrelingua), italiano e inglese (fluenti). Non traduco solo le parole &mdash; leggo il contesto commerciale e adatto la comunicazione di conseguenza.</p>
         <p class="about-text" data-lang="en">Born in Brazil, Italian by heritage and citizenship, resident in Veneto: I operate professionally in Portuguese (native), Italian and English (fluent). I don&#39;t just translate words &mdash; I read the commercial context and adapt communication accordingly.</p>
         <p class="about-text" data-lang="pt">Nascido no Brasil, italiano por origem e cidadania, residente no V&ecirc;neto: opero profissionalmente em portugu&ecirc;s (nativo), italiano e ingl&ecirc;s (fluentes). N&atilde;o traduzo apenas palavras &mdash; leio o contexto comercial e adapto a comunica&ccedil;&atilde;o de forma eficaz.</p>
@@ -166,7 +249,7 @@
       </div>
       <div class="about-visual">
         <div class="about-logo-wrap">
-          <img class="about-logo" src="/img/logo.png" alt="VIAL Brasilis">
+          <img class="about-logo" src="/img/vm-logo.png" alt="V&amp;M">
           <div class="about-langs-ring">
             <span class="lang-badge">&#127463;&#127479; Portugu&ecirc;s</span>
             <span class="lang-badge">&#127468;&#127463; English</span>
@@ -175,6 +258,19 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="services" id="traduzione">
+  <div class="container">
+    <div class="section-eyebrow"><span data-lang="it active">Traduzione e partner commerciale</span><span data-lang="en">Translation and commercial partner</span><span data-lang="pt">Tradu&ccedil;&atilde;o e parceiro comercial</span></div>
+<h2 class="section-title" data-lang="it active">Anche per i mercati lusofoni e anglofoni</h2>
+<h2 class="section-title" data-lang="en">Also for Lusophone and Anglophone markets</h2>
+<h2 class="section-title" data-lang="pt">Tamb&eacute;m para os mercados lus&oacute;fonos e angl&oacute;fonos</h2>
+<p class="section-lead" data-lang="it active">Traduzione non giurata, interpretariato fieristico, formazione linguistica aziendale e supporto commerciale all&#39;export, in tutte le combinazioni IT&harr;PT&harr;EN. Servizi, tariffe e il lavoro con Brasile e Italia sono nella pagina dedicata.</p>
+<p class="section-lead" data-lang="en">Non-sworn translation, trade fair interpretation, corporate language training and commercial export support, in all IT&harr;PT&harr;EN combinations. Services, pricing and work between Brazil and Italy are on the dedicated page.</p>
+<p class="section-lead" data-lang="pt">Tradu&ccedil;&atilde;o n&atilde;o juramentada, interpreta&ccedil;&atilde;o em feiras, forma&ccedil;&atilde;o lingu&iacute;stica empresarial e suporte comercial &agrave; exporta&ccedil;&atilde;o, em todas as combina&ccedil;&otilde;es IT&harr;PT&harr;EN. Servi&ccedil;os, tarifas e o trabalho entre Brasil e It&aacute;lia est&atilde;o na p&aacute;gina dedicada.</p>
+    <p class="consulting-cta"><a class="btn-primary" href="{{TRADHREF}}"><span data-lang="it active">Servizi e tariffe di traduzione</span><span data-lang="en">Translation services and pricing</span><span data-lang="pt">Servi&ccedil;os e tarifas de tradu&ccedil;&atilde;o</span></a></p>
   </div>
 </section>
 
