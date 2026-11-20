@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" href="/img/logo.png">
 <link as="font" crossorigin="" href="/fonts/inter-400.woff2" rel="preload" type="font/woff2"/>
-<link href="/css/style.css?v=20261119b" rel="stylesheet"/>
+<link href="/css/style.css?v=20261120b" rel="stylesheet"/>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -32,7 +32,7 @@
 <img alt="V&amp;M" class="nav-logo" src="/img/vm-logo.png"/>
 <span class="nav-name">V&amp;M<small>VIAL Brasilis</small></span>
 </a>
-<div class="nav-links">
+<button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button><div class="nav-links" id="nav-links">
     <a href="/diagnosi/">Diagnosi</a>
     <a href="/#come">Come funziona</a>
 <a href="/#tariffe">Tariffe</a>
@@ -43,6 +43,7 @@
     <div aria-label="Lingua / Language / Idioma" class="lang-switcher" role="group"><a class="lang-btn active" href="/" hreflang="it" lang="it" aria-current="true">IT</a><a class="lang-btn" href="/en/" hreflang="en" lang="en">EN</a><a class="lang-btn" href="/pt/" hreflang="pt-BR" lang="pt-BR">PT</a></div>
 </div>
 </nav>
+<script>(function(){var n=document.querySelector("nav"),b=n&&n.querySelector(".nav-toggle");if(!b)return;function s(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")}b.addEventListener("click",function(){s(!n.classList.contains("open"))});n.addEventListener("click",function(e){if(e.target.closest&&e.target.closest(".nav-links a"))s(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape")s(false)})})();</script>
 <main id="main">
 <section class="hero">
 <div class="hero-diagonal"></div>
