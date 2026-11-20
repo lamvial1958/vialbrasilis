@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://vialbrasilis.it'
-LASTMOD = '2026-11-18'
+LASTMOD = '2026-11-20'
 LANGS = ['it', 'en', 'pt']
 PATH = {'it': '/', 'en': '/en/', 'pt': '/pt/'}
 HTMLLANG = {'it': 'it', 'en': 'en', 'pt': 'pt-BR'}
@@ -117,11 +117,11 @@ NAVDIAG = {
 }
 DIAG_META = {
     'it': ('Diagnosi rapida di cassa e margini per le aziende | VIAL Brasilis',
-           'Diagnosi di cassa e margini per le aziende, letta per settore: dove si ferma il denaro, cosa fare per primo, con piano a 30, 60 e 90 giorni, riservatezza e compenso legato ai risultati.'),
+           'Diagnosi di cassa e margini per le aziende, letta per settore: dove si ferma il denaro, cosa fare per primo, con piano a 30, 60 e 90 giorni, riservatezza e tariffa fissa.'),
     'en': ('Fast cash and margin diagnostics for companies | VIAL Brasilis',
-           'Cash and margin diagnostics for companies, read by sector: where money gets stuck, what to do first, with a 30-60-90 day plan, confidentiality and a fee tied to results.'),
+           'Cash and margin diagnostics for companies, read by sector: where money gets stuck, what to do first, with a 30-60-90 day plan, confidentiality and a fixed fee.'),
     'pt': ('Diagnóstico rápido de caixa e margem para empresas | VIAL Brasilis',
-           'Diagnóstico de caixa e margem para empresas, lido por setor: onde o dinheiro trava, o que fazer primeiro, com plano de 30, 60 e 90 dias, confidencialidade e honorário ligado aos resultados.'),
+           'Diagnóstico de caixa e margem para empresas, lido por setor: onde o dinheiro trava, o que fazer primeiro, com plano de 30, 60 e 90 dias, confidencialidade e honorário fixo.'),
 }
 BRASIL_META = {
     'it': ('Italia e Brasile — Supporto linguistico e commerciale | VIAL Brasilis',
@@ -223,7 +223,8 @@ def build_home(lang, tpl, meta=None, paths=None):
             .replace('{{SCRIPT}}', script(lang) if '{{SCRIPT}}' in html else '')
             .replace('{{HOME}}', PATH[lang]).replace('{{TRADHREF}}', TRAD_PATH[lang])
             .replace('{{DIAGHREF}}', DIAG_PATH[lang]).replace('{{BRASILHREF}}', BRASIL_PATH.get(lang, PATH[lang]))
-            .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, '')))
+            .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, ''))
+            .replace('{{NAVDIAG}}', NAVDIAG[lang]))
     assert '{{' not in html, re.findall(r'\{\{\w+\}\}', html)
     return html
 
@@ -244,7 +245,7 @@ BRASIL_TPL = '''<!DOCTYPE html>
 <meta property="og:locale" content="%(og)s">
 <meta property="og:image" content="%(base)s/img/vm-logo.png">
 <link rel="icon" type="image/png" href="/img/logo.png">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v=20261119b">
 </head>
 <body class="legal">
 <a class="skip-link" href="#main">%(skip)s</a>
@@ -304,7 +305,7 @@ def legal_page(title, desc, path, body):
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(base)s%(path)s">
 <link rel="icon" type="image/png" href="/img/logo.png">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v=20261119b">
 </head>
 <body class="legal">
 <nav>
