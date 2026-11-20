@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://vialbrasilis.it'
-LASTMOD = '2026-11-18'
+LASTMOD = '2026-11-20'
 LANGS = ['it', 'en', 'pt']
 PATH = {'it': '/', 'en': '/en/', 'pt': '/pt/'}
 HTMLLANG = {'it': 'it', 'en': 'en', 'pt': 'pt-BR'}
@@ -244,7 +244,7 @@ BRASIL_TPL = '''<!DOCTYPE html>
 <meta property="og:locale" content="%(og)s">
 <meta property="og:image" content="%(base)s/img/vm-logo.png">
 <link rel="icon" type="image/png" href="/img/logo.png">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v=20261119b">
 </head>
 <body class="legal">
 <a class="skip-link" href="#main">%(skip)s</a>
@@ -304,7 +304,7 @@ def legal_page(title, desc, path, body):
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(base)s%(path)s">
 <link rel="icon" type="image/png" href="/img/logo.png">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v=20261119b">
 </head>
 <body class="legal">
 <nav>

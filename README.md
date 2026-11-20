@@ -20,6 +20,12 @@ Site estático publicado pelo GitHub Pages a partir da raiz do branch `main`.
 2. Rode `python tools/build.py` (requer `beautifulsoup4`).
 3. Revise com `git diff`, faça commit e só então publique (push no `main`).
 
+Convenções: `LASTMOD` em `tools/build.py` é a data usada no sitemap (atualize ao publicar); o link do CSS leva `?v=...` (troque o número em `src/template.html`, `src/traduzione.template.html` e `tools/build.py` quando o CSS mudar, para furar o cache do navegador).
+
+## Projetos relacionados
+
+O diagnóstico em si (a ferramenta e o material comercial) é **privado** e fica em outro projeto, fora deste repositório. As páginas de diagnóstico deste site (`src/diagnosi.*.body.html`) descrevem recursos dessa ferramenta: ao alterá-la, revise esses textos; e ao alterar os textos, confira se continuam verdadeiros.
+
 ## Material interno
 
 Documentos de negócio e apresentações ficam **fora do repositório**, em `C:\vialbrasilis_interno\`
