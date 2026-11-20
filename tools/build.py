@@ -117,11 +117,11 @@ NAVDIAG = {
 }
 DIAG_META = {
     'it': ('Diagnosi rapida di cassa e margini per le aziende | VIAL Brasilis',
-           'Diagnosi di cassa e margini per le aziende, letta per settore: dove si ferma il denaro, cosa fare per primo, con piano a 30, 60 e 90 giorni, riservatezza e compenso legato ai risultati.'),
+           'Diagnosi di cassa e margini per le aziende, letta per settore: dove si ferma il denaro, cosa fare per primo, con piano a 30, 60 e 90 giorni, riservatezza e tariffa fissa.'),
     'en': ('Fast cash and margin diagnostics for companies | VIAL Brasilis',
-           'Cash and margin diagnostics for companies, read by sector: where money gets stuck, what to do first, with a 30-60-90 day plan, confidentiality and a fee tied to results.'),
+           'Cash and margin diagnostics for companies, read by sector: where money gets stuck, what to do first, with a 30-60-90 day plan, confidentiality and a fixed fee.'),
     'pt': ('Diagnóstico rápido de caixa e margem para empresas | VIAL Brasilis',
-           'Diagnóstico de caixa e margem para empresas, lido por setor: onde o dinheiro trava, o que fazer primeiro, com plano de 30, 60 e 90 dias, confidencialidade e honorário ligado aos resultados.'),
+           'Diagnóstico de caixa e margem para empresas, lido por setor: onde o dinheiro trava, o que fazer primeiro, com plano de 30, 60 e 90 dias, confidencialidade e honorário fixo.'),
 }
 BRASIL_META = {
     'it': ('Italia e Brasile — Supporto linguistico e commerciale | VIAL Brasilis',
@@ -223,7 +223,8 @@ def build_home(lang, tpl, meta=None, paths=None):
             .replace('{{SCRIPT}}', script(lang) if '{{SCRIPT}}' in html else '')
             .replace('{{HOME}}', PATH[lang]).replace('{{TRADHREF}}', TRAD_PATH[lang])
             .replace('{{DIAGHREF}}', DIAG_PATH[lang]).replace('{{BRASILHREF}}', BRASIL_PATH.get(lang, PATH[lang]))
-            .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, '')))
+            .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, ''))
+            .replace('{{NAVDIAG}}', NAVDIAG[lang]))
     assert '{{' not in html, re.findall(r'\{\{\w+\}\}', html)
     return html
 
