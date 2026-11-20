@@ -109,6 +109,22 @@ NAVBRASIL = {
     'pt': '<a href="/pt/brasil/">Brasil</a>',
 }
 BRASIL_PATH = {'it': '/brasile/', 'pt': '/pt/brasil/'}
+NAVBTN = ('<button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">'
+          '<span></span><span></span><span></span></button>')
+NAVJS = ('<script>(function(){var n=document.querySelector("nav"),b=n&&n.querySelector(".nav-toggle");if(!b)return;'
+         'function s(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")}'
+         'b.addEventListener("click",function(){s(!n.classList.contains("open"))});'
+         'n.addEventListener("click",function(e){if(e.target.closest&&e.target.closest(".nav-links a"))s(false)});'
+         'document.addEventListener("keydown",function(e){if(e.key==="Escape")s(false)})})();</script>')
+
+
+def menu_mobile(html):
+    """Botão de menu para telas estreitas (o CSS esconde os links abaixo de 900 px): vale para todas as páginas."""
+    assert html.count('<div class="nav-links">') == 1 and html.count('</nav>') == 1
+    return (html.replace('<div class="nav-links">', NAVBTN + '<div class="nav-links" id="nav-links">')
+            .replace('</nav>', '</nav>\n' + NAVJS))
+
+
 DIAG_PATH = {'it': '/diagnosi/', 'en': '/en/diagnosis/', 'pt': '/pt/diagnostico/'}
 NAVDIAG = {
     'it': '<a href="/diagnosi/">Diagnosi</a>',
@@ -226,7 +242,7 @@ def build_home(lang, tpl, meta=None, paths=None):
             .replace('{{NAVBRASIL}}', NAVBRASIL.get(lang, ''))
             .replace('{{NAVDIAG}}', NAVDIAG[lang]))
     assert '{{' not in html, re.findall(r'\{\{\w+\}\}', html)
-    return html
+    return menu_mobile(html)
 
 
 BRASIL_TPL = '''<!DOCTYPE html>
@@ -245,7 +261,7 @@ BRASIL_TPL = '''<!DOCTYPE html>
 <meta property="og:locale" content="%(og)s">
 <meta property="og:image" content="%(base)s/img/vm-logo.png">
 <link rel="icon" type="image/png" href="/img/logo.png">
-<link rel="stylesheet" href="/css/style.css?v=20261119b">
+<link rel="stylesheet" href="/css/style.css?v=20261120b">
 </head>
 <body class="legal">
 <a class="skip-link" href="#main">%(skip)s</a>
@@ -263,6 +279,7 @@ BRASIL_TPL = '''<!DOCTYPE html>
 </body>
 </html>
 '''
+BRASIL_TPL = menu_mobile(BRASIL_TPL)
 
 
 def brasil_page(lang):
@@ -296,7 +313,7 @@ def write(rel, content):
 
 
 def legal_page(title, desc, path, body):
-    return '''<!DOCTYPE html>
+    return menu_mobile('''<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -305,7 +322,7 @@ def legal_page(title, desc, path, body):
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(base)s%(path)s">
 <link rel="icon" type="image/png" href="/img/logo.png">
-<link rel="stylesheet" href="/css/style.css?v=20261119b">
+<link rel="stylesheet" href="/css/style.css?v=20261120b">
 </head>
 <body class="legal">
 <nav>
@@ -318,7 +335,7 @@ def legal_page(title, desc, path, body):
 %(footer)s
 </body>
 </html>
-''' % dict(title=title, desc=desc, base=BASE, path=path, body=body, footer=footer('it'))
+''' % dict(title=title, desc=desc, base=BASE, path=path, body=body, footer=footer('it')))
 
 
 LEGAL = {
