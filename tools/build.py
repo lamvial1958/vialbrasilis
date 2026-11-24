@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://vialbrasilis.it'
-LASTMOD = '2026-11-20'
+LASTMOD = '2026-11-24'
 LANGS = ['it', 'en', 'pt']
 PATH = {'it': '/', 'en': '/en/', 'pt': '/pt/'}
 HTMLLANG = {'it': 'it', 'en': 'en', 'pt': 'pt-BR'}
